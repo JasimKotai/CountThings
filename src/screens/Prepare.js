@@ -21,9 +21,9 @@ const Prepare = ({route, navigation}) => {
           </View>
         </TouchableOpacity>
         <Text style={styles.title}>Prepare</Text>
-        <TouchableOpacity style={{marginTop: 30, marginRight: 10}}>
+        {/* <TouchableOpacity style={{marginTop: 30, marginRight: 10}}>
           <Text style={styles.reviewBtnText}>Review</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
       <View style={styles.parent}>
         <View style={{backgroundColor: SECONDARY_COLOR, padding: 30}} />
@@ -48,22 +48,18 @@ export default Prepare;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#FFFF',
   },
   header: {
-    height: 80,
     backgroundColor: '#FFFF',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    paddingVertical: 10,
   },
   backbtnView: {
+    position: 'absolute',
     flexDirection: 'row',
-    height: 40,
-    width: 70,
-    //   backgroundColor: 'red',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
-    marginTop: 20,
+    justifyContent: 'center',
+    marginTop: 30,
     marginLeft: 10,
   },
   backBtntext: {
@@ -74,7 +70,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: 'Montserrat-Bold',
     color: '#000',
-    marginTop: 20,
+    marginTop: 30,
+    alignSelf: 'center',
   },
   reviewBtnText: {
     fontSize: 14,
